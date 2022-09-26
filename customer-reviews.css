@@ -1,0 +1,79 @@
+/* start review section styles */
+
+.reviewWrapper {
+    margin-top: 1pc auto;
+    width: 100%;
+    padding: 1pc;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1pc;
+}
+
+.review-us {
+    border-radius: 1pc;
+    padding: 1pc;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2pc;
+    box-shadow: 0 0 .6pc .006pc rgb(228, 226, 226);
+}
+
+
+
+.s-profile-img {
+    border-radius: 100%;
+}
+
+.rev-1 {
+    position: relative;
+    left: -20%;
+}
+
+.rev-2 {
+    position: relative;
+    left: 0%;
+    background-color: rgba(238, 238, 238, 0.123);
+
+}
+
+/* try to unset padding-left on rev-3*/
+.rev-3 {
+    position: relative;
+    left: 15%;
+    background-color: rgba(238, 238, 238, 0.134);
+}
+
+/* end if - review section styles */
+
+@media only screen and (max-width: 996px) {
+    .reviewWrapper {
+        overflow: scroll;
+        padding: 10px;
+    }
+
+    .review-us {
+        width: 60%;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .reviewWrapper {
+        overflow: scroll;
+        padding: 10px;
+    }
+
+    .review-us {
+        width: 100%;
+    }
+
+    .rev-1 {
+        left: 0%;
+    }
+    .rev-3 {
+        left: 0%;
+    }
+}

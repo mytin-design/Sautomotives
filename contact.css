@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.c-form-wrap {
+    padding: 1pc;
+}
+
+.form-wrapper {
+    border: 1px solid  #eee;
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgb(62, 168, 230);
+}
+
+#contact {
+    margin-top: 30px;
+    gap: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#more_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#name, #email, #url, #comments {
+    width: 70%;
+    outline: none;
+}
+
+label {
+    color: #00f;
+
+}
+.submit_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    
+    
+}
+
+.submit-btn {
+    width: 70px;
+    border: none;
+    background-color: rgba(0, 0, 255, 0.63);
+    color: white;
+    height: 2.5pc;
+
+}
+
+.submit-btn:hover {
+    background-color: blue;
+}
+
+/* styles for displays less than 500px */
+
+@media only screen and (max-width: 500px) {
+
+    .form-wrapper {
+        width: 100%;
+        
+    }
+    .box {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .submit-btn {
+        width: 10pc;
+        height: 2.5pc;
+    }
+
+    #more_text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .submit_box {
+        padding: 0;
+    }
+}

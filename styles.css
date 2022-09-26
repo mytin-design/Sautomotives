@@ -1,0 +1,1327 @@
+/* root styles for all pages */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* override initial glyph */
+    font-family: serif;
+}
+
+:root {
+    --main-white: #fff;
+    --main-black: black;
+    --medium-gray: #777;
+    --light-gray: rgba(241, 241, 241, 0.514);
+    --nav-bk: rgb(77, 101, 182);
+    --nav-link-hover: lightgray;
+    --dark-gray: #333;
+}
+nav {
+    height: 40px;
+    background-color: var(--nav-bk);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .2pc;
+    font-size: 12px;
+}
+
+.n-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1pc;
+    height: 100%;
+    text-decoration: none;
+    color: var(--main-white);
+    padding: .5pc;
+    width: fit-content;
+}
+
+.n-link:hover {
+    color: var(--nav-link-hover) ;
+}
+
+.c-what {
+    font-size: 1.3rem;
+    font-weight: bolder;
+
+}
+
+.border-r{
+    border-right: .1pc solid var(--light-gray);
+}
+#lang {
+    width: 13%;
+    height: 70%;
+    background-color: var(--light-gray);
+}
+
+/* search container styles */
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3pc;
+}
+
+
+
+.search-form {
+
+    display: flex;
+    align-items: center;
+    gap: .2pc;
+    width: 18pc;
+    height: 2pc;
+    background-color: #fff;
+}
+
+#search{
+    height: 100%;
+    width: 90%;
+    border: none;
+    outline: none;
+}
+
+#search[placeholder="Search for products"] {
+    padding-left: 1pc;
+}
+
+
+
+.search-wrapper:hover #searchForm {
+    display: inline-flex;
+}
+
+
+/* End Nav section */
+
+.header {
+    height: 60vh;
+    
+}
+
+/* All external links will have a background image */
+.bk-img {
+    background: url(http://prestonvehicles.com/wp-content/uploads/2020/12/1600x900_Fleet_Web_Header_1.jpg) 50% no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+
+.navigation {
+    margin: 2pc auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1pc;
+    font-size: 13px;
+}
+
+.x-logo-link {
+    font-size: 2.5rem;
+    color: var(--main-black);
+    text-decoration: none;
+}
+
+.sec-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+
+}
+
+.dropdown {
+    width: 20pc;
+    position: relative;
+    display: inline-block;
+    margin-top: 1pc;
+}
+
+.dropbtn {
+    border: .1pc solid var(--light-gray);
+    height: 3pc;
+    display: flex;
+    align-items: center;
+    gap: 1pc;
+    padding: 1pc 1.6pc;
+}
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-white);
+    position: absolute;
+    box-shadow: 0pc 0.666pc .666pc var(--medium-gray);
+    z-index: 10;
+    width: 100%;
+    display: none;
+}
+
+
+
+.cat-tag {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--main-black);
+    font-weight: bold;
+    height: 3pc;
+    display: flex;
+    gap: 1pc;
+    padding: 1pc 1.6pc;
+}
+
+.cat-tag:hover {
+    background-color: var(--light-gray);
+    color: var(--main-black);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Secondary links color, e.g suv, trucks, - For landing page; 
+- should change where an appropriate background exists*/
+.sec-nav-l {
+    text-decoration: none;
+    color: var(--medium-gray);
+}
+
+.sec-nav-l:hover {
+    color: var(--main-black);
+}
+
+.text-white {
+    color: #fff;
+}
+
+.intro-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5pc auto;
+}
+
+.bold {
+    
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.icons-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.6pc 1.6pc;
+}
+.icon-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.svg-6538 {
+    height: 110px; width: 110px;
+    border: .15pc solid;
+    border-radius: 100%;
+    padding: .5pc;
+}
+
+.ban-img {
+    height: 14pc;
+    width: 18pc;
+    border-radius: .4pc;
+}
+
+/* marketing data tag wrapper styles */
+
+.sell-ad {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+}
+
+.sell-text {
+    color: var(--medium-gray);
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-bold {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.text-sm {
+    font-size: 15px;
+}
+
+/* tab section styles */
+
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5pc;
+    overflow: hidden;
+}
+
+.tbtn {
+    position: relative;
+    background-color: var(--main-white);
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: default;
+    padding: .5pc;
+}
+
+/* hover-underline-animation */
+
+.tbtn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00aeff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    transform: scaleX(0);
+}
+
+.tbtn:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* LVHA link protocol */
+.tbtn:visited {
+    transform: scaleX(1);
+    
+}
+
+
+
+/* styles for active / current tablink btn */
+
+.tab .tbtn.active {
+    background-color: var(--light-gray);
+    padding: 1pc;
+    transform: scaleX(1);
+} 
+
+
+/* Tab for best seller vehicles styles */
+
+.tabsProtocol {
+    margin: 0 auto;
+    width: 95%;
+    border: .1pc solid var(--light-gray);
+    padding: .5pc;
+}
+
+
+.tabcontent {
+    margin-top: 1pc;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: .5pc;
+
+}
+
+
+.tabcontent {
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.car-wrapper {
+    width: 18pc;
+    display: flex;
+    font-size: 12px;
+    flex-flow: column;
+    align-items: center;
+    padding: .5pc;
+    transition: box-shadow .5s ease-out;
+    position: relative;
+    display: inline-block;
+}
+
+.car-img {
+    height: 15pc;
+    width: 15pc;
+}
+
+
+.render {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--main-black);
+    transition: display .5s ease;
+    background: var(--main-white);
+}
+
+.render:hover {
+    text-decoration: none;
+    color: var(--main-black);
+}
+
+
+#vName:hover {
+    color: var(--medium-gray);
+    text-align: center;
+}
+
+.regSection {
+    padding: 1pc;
+}
+
+/* Rendered on figure hover */
+
+.display-show {
+    background: var(--main-white);
+    padding: .2pc;
+    margin-top: .5pc;
+    text-align: center;
+    position: absolute;
+    box-shadow: 0pc 0.666pc .666pc var(--medium-gray);
+    display: none;
+    z-index: 15;
+}
+
+
+
+.data-car {
+    display: flex;
+    justify-content: space-between;
+    padding: .5pc .5pc;
+    border-bottom: .1pc dashed var(--light-gray);
+    border-radius: .2pc;
+}
+
+.cdValue {
+    color: var(--medium-gray);
+}
+
+/* hover state for each display card */
+
+.car-wrapper:hover .display-show {
+    display: block;
+}
+
+
+
+.car-wrapper:hover {
+    box-shadow: 0pc .6pc .66pc var(--medium-gray);
+}
+
+#rMore {
+    height: 2.5pc;
+    width: 7pc;
+    border-radius: .5pc;
+    background-color: #00aeff;
+    color: var(--main-white);
+    border: none;
+}
+
+/* hover state for best selling vehicles 
+.car-wrapper:hover .bs-hide {
+    display: none;
+}
+
+*/
+
+
+/* To rated trucks */
+
+.tt-sec {
+    margin: 0 auto;
+    width: 95%;
+    padding: .5pc;
+    background-color: var(--light-gray);
+
+}
+
+.tt-title {
+    margin: 5pc auto;
+    width: 50%;
+
+}
+.tt-title {
+    font-weight: 800;
+    font-size: 2.1rem;
+    text-align: center;
+
+}
+
+#trucks {
+    margin-top: 1pc;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: .5pc;
+    padding: .5pc;
+}
+
+.truck-wrapper {
+    width: 14pc;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: .5pc;
+    transition: box-shadow .5s ease-out;
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+
+}
+
+.truck-img {
+    height: 100%;
+    width: 100%;
+}
+
+.t-display {
+    background: var(--main-white);
+    padding: .2pc;
+    margin-top: .5pc;
+    text-align: center;
+    position: absolute;
+    box-shadow: 0pc 0.666pc .666pc var(--medium-gray);
+    z-index: 10;
+    display: none;
+}
+
+.data-truck {
+    display: flex;
+    justify-content: space-between;
+    padding: .5pc .5pc;
+    border-bottom: .1pc dashed var(--light-gray);
+    font-size: 12px;
+    border-radius: .2pc;
+    z-index: 10;
+}
+
+#tName{
+    text-align: center;
+    font-size: 14px;
+}
+
+/* hover states */
+
+.truck-wrapper:hover .t-display {
+    display: block;
+}
+
+.truck-wrapper:hover {
+    box-shadow: 0pc .6pc .66pc var(--medium-gray);
+}
+
+
+.render:hover .t-display {
+    display: block;
+    z-index: 10;
+}
+
+.truck-wrapper:hover {
+    box-shadow: 0pc .6pc .66pc var(--medium-gray);
+    background: var(--main-white);
+    z-index: 15;
+}
+
+.no-vehicle-box {
+    height: 20vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1pc;
+}
+
+.no-car-title {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+
+/* END TRUCKS STYLES */
+
+.bk-img-wrap {
+    margin-top: 3pc;
+    background: url(./images/sauto-bk-quality-sell.png) 50% 50% no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 50vh;
+    width: 100%;
+}
+
+/* supplier box styles */
+.sup-wrap {
+    display: flex;
+    padding: 1pc;
+    margin-top: 3pc;
+    height: 70vh;
+
+}
+
+.sup-text {
+    width: 60%;
+    padding: 1pc;
+
+}
+
+.text-lighter {
+    color: var(--medium-gray);
+}
+.li-text-sup {
+    list-style-type: circle;
+}
+
+.vh-list {
+    height: 2.5pc;
+    width: 20pc;
+    background-color: rgb(17, 93, 122);
+    color: var(--main-white);
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding: .6pc;
+}
+
+.vh-list:hover {
+    color: var(--main-white);
+}
+
+.cont-sup {
+    text-decoration: none;
+    height: 2.5pc;
+    width: 10pc;
+    border: .1pc solid var(--light-gray);
+    outline: none;
+    background-color: var(--main-white);
+    color: var(--main-black);
+    padding: .6pc;
+}
+
+.cont-sup:hover {
+    background-color: var(--light-gray);
+    color: black;
+}
+
+.sup-img-wrap {
+    padding: 1pc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sup-img {
+    width: 90%;
+    height: 100%;
+}
+
+/* END SUPLIER WRAPPER STYLES */
+
+
+/* footer styles */
+.foo {
+    height: 70vh;
+}
+
+
+.del-ban-wrap {
+    background: url(./images/del-banner.png) 50% 50% no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 20vh;
+}
+
+.foo-link-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1pc;
+    background-color: var(--light-gray);
+}
+
+
+.f-link {
+    display: flex;
+    flex-flow: column;
+    gap: 1pc;
+    width: 10pc;
+    padding: .5pc;
+}
+
+.foo-link-title {
+    text-align: center;
+    font-weight: 600;
+
+}
+
+.sec-link {
+    text-decoration: none;
+    color: var(--main-black);
+}
+
+
+
+.address-box-img {
+    width: 20pc;
+    height: 5pc;
+}
+
+.foo-loc-tag {
+    margin-top: 1pc;
+}
+
+.ad-tag {
+    display: flex;
+}
+
+address {
+    padding-left: 1pc;
+}
+.del-ban-wrap {
+    background: url(./images/del-banner.png) 50% 50% no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 20vh;
+}
+
+.crights-box  {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+
+/* tablet/ipad styles: display sizes below 996px */
+
+@media only screen and (max-width: 996px) {
+    .lw-hide {
+        display: none;
+    }
+
+    .navigation {
+        margin: 2pc auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1pc;
+        font-size: 13px;
+    }
+
+    .sec-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 90%;
+        font-size: 12px;
+
+    
+    }
+
+    .dropdown {
+        width: 15pc;
+        position: relative;
+        display: inline-block;
+        margin-top: 1pc;
+        font-size: 12px;
+    }
+
+
+    
+    .svg-6538 {
+        height: 70px; width: 70px;
+        border: .15pc solid;
+        border-radius: 100%;
+        padding: .5pc;
+    }
+
+    .tabcontent {
+        margin-top: 1pc;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: .5pc;
+    }
+    
+    
+    .car-wrapper {
+        width: 13pc;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: .5pc;
+        transition: box-shadow .5s ease-out;
+        position: relative;
+    }
+    
+    .car-img {
+        height: 10pc;
+        width: 10pc;
+    }
+
+    .render {
+        font-size: 14px;
+    }
+    #trucks {
+        margin-top: 1pc;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: .5pc;
+        padding: .5pc;
+    }
+    
+    .truck-wrapper {
+        width: 10pc;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: .5pc;
+        transition: box-shadow .5s ease-out;
+    
+    }
+
+    .display-show {
+        width: 15pc;
+        top: 100%;
+    }
+
+    .t-display {
+        top: 100%;
+        width: 15pc;
+    }
+    .tt-title {
+        font-size: small;
+    }
+
+    .bk-img-wrap {
+        height: 20vh;
+    }
+    
+    .sup-wrap {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 1pc;
+        margin-top: 3pc;
+        height: 70vh;
+    
+    }
+    
+    .sup-text {
+        width: 100%;
+        padding: 1pc;
+    
+    }
+    
+
+    
+    .sup-img {
+        width: 70%;
+        height: 100%;
+    }
+
+    .del-ban-wrap {
+        height: 8vh;
+    }
+
+    .foo-link-wrap {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 1pc;
+        background-color: var(--light-gray);
+
+    }
+    
+    
+    .f-link {
+        display: flex;
+        flex-flow: column;
+        width: 13pc;
+        padding: .5pc;
+        margin: .5pc;
+        border: .1pc solid var(--light-gray);
+    }
+    
+    .foo-link-title {
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .sec-link {
+        text-decoration: none;
+        color: var(--main-black);
+    }
+
+    
+    
+    .crights-box > .c-right {
+        text-align: center;
+    }
+    
+    
+    
+}
+
+
+/* Iphone SE styles: display sizes below 500px */
+
+@media only screen and (max-width: 500px) {
+
+    nav {
+        padding: .5pc;
+    }
+    .lw-hide {
+        display: none;
+    }
+
+    .c-what {
+        font-size: 12px;
+    }
+
+    .search-wrapper {
+        margin: 0;
+    }
+    .search-form {        
+        width: 10pc;
+    }
+
+
+
+    .sec-nav {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 11px;
+    }
+
+    .cat-tag {
+        height: 1pc;
+    }
+    
+
+    .icons-nav {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .icon-link {
+        margin: .5pc;
+    }
+    .svg-6538 {
+        height: 70px; width: 70px;
+        border: .15pc solid;
+        border-radius: 100%;
+        padding: .5pc;
+    }
+
+    .ban-img {
+        height: 12pc;
+        width: 16pc;
+    }
+    
+    .intro-sec > p {
+        text-align: center;
+    }
+    .tabcontent {
+        margin-top: 1pc;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: .5pc;
+    }
+    
+    
+    .car-wrapper {
+        width: 10pc;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: .5pc;
+        transition: box-shadow .5s ease-out;
+        position: relative;
+        font-size: 12px;
+    }
+    
+    
+    .tt-sec {
+        width: 100%;
+    }
+
+    .tt-title {
+        font-size: smaller;
+    }
+    #trucks {
+        margin-top: 1pc;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: .5pc;
+        padding: .5pc;
+    }
+    
+    .display-show {
+        width: 13pc;
+        top: 100%;
+    }
+    .t-display {
+        top: 100%;
+        width: 12pc;
+        font-size: small;
+    }
+    
+    .sup-wrap {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 1pc;
+        margin-top: 3pc;
+        height: 120vh;
+    
+    }
+    
+    .sup-text {
+        width: 100%;
+        padding: 1pc;
+    
+    }
+
+    .btn-sup {
+        display: flex;
+        flex-flow: column;
+    }
+    
+
+    
+    .sup-img {
+        width: 70%;
+        height: 100%;
+    }
+
+    .del-ban-wrap {
+        height: 6vh;
+    }
+
+    .foo-link-wrap {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 1pc;
+        background-color: var(--light-gray);
+        font-size: 14px;
+
+    }
+
+    
+
+    
+    
+    
+}
+
+
+/* Below are external pages styles - Be cautious for conflicts with the main styles */
+
+
+/* About -us styles */
+.grid-box {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.about_title, .ab_title-1, .values {
+    font-weight: 800;
+    font-size: 2pc;
+}
+
+@media only screen and (max-width: 500px) {
+    .c-form-wrap {
+        text-align: center;
+    }
+}
+
+
+/* all cars page styles */
+
+@media only screen and (max-width: 500px) {
+    *, #tName, #vName {
+        font-size: 11px;
+    }
+    /*
+
+    
+    .tab-ph {
+        font-size: smaller;
+    }
+
+    .tt-title {
+        font-size: smaller;
+    }
+    */
+
+    .tt-sec {
+        width: 100%;
+    }
+
+    
+    .del-ban-wrap {
+        margin: 0;
+    }
+
+
+
+}
+
+
+/* Contact page styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.c-form-wrap {
+    padding: 1pc;
+}
+
+.form-wrapper {
+    border: 1px solid  #eee;
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgb(62, 168, 230);
+}
+
+#contact {
+    margin-top: 30px;
+    gap: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#more_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#name, #email, #url, #comments {
+    width: 70%;
+    outline: none;
+}
+
+label {
+    color: #00f;
+
+}
+.submit_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    
+    
+}
+
+.submit-btn {
+    width: 70px;
+    border: none;
+    background-color: rgba(0, 0, 255, 0.63);
+    color: white;
+    height: 2.5pc;
+
+}
+
+.submit-btn:hover {
+    background-color: blue;
+}
+
+/* styles for displays less than 500px */
+
+@media only screen and (max-width: 500px) {
+
+    .form-wrapper {
+        width: 100%;
+        
+    }
+    .box {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .submit-btn {
+        width: 10pc;
+        height: 2.5pc;
+    }
+
+    #more_text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .submit_box {
+        padding: 0;
+    }
+}
+
+
+/* customer review styles */
+
+/* start review section styles */
+
+.reviewWrapper {
+    margin-top: 1pc auto;
+    width: 100%;
+    padding: 1pc;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1pc;
+}
+
+.review-us {
+    border-radius: 1pc;
+    padding: 1pc;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2pc;
+    box-shadow: 0 0 .6pc .006pc rgb(228, 226, 226);
+}
+
+
+
+.s-profile-img {
+    border-radius: 100%;
+}
+
+.rev-1 {
+    position: relative;
+    left: -20%;
+}
+
+.rev-2 {
+    position: relative;
+    left: 0%;
+    background-color: rgba(238, 238, 238, 0.123);
+
+}
+
+/* try to unset padding-left on rev-3*/
+.rev-3 {
+    position: relative;
+    left: 15%;
+    background-color: rgba(238, 238, 238, 0.134);
+}
+
+/* end if - review section styles */
+
+@media only screen and (max-width: 996px) {
+    .reviewWrapper {
+        overflow: scroll;
+        padding: 10px;
+    }
+
+    .review-us {
+        width: 60%;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .reviewWrapper {
+        overflow: scroll;
+        padding: 10px;
+    }
+
+    .review-us {
+        width: 100%;
+    }
+
+    .rev-1 {
+        left: 0%;
+    }
+    .rev-3 {
+        left: 0%;
+    }
+}
+
+
+/* FAQ page styles */
+
+.help_page {
+    border-radius: 8px;
+    margin: 50px auto;
+    width: 80%;
+    height: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    background-color: var(--holder_backg);
+
+}
+
+
+
+
+

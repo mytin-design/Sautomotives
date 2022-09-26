@@ -1,0 +1,12 @@
+.help_page {
+    border-radius: 8px;
+    margin: 50px auto;
+    width: 80%;
+    height: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    background-color: var(--holder_backg);
+
+}

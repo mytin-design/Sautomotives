@@ -1,0 +1,28 @@
+@media only screen and (max-width: 500px) {
+    *, #tName, #vName {
+        font-size: 11px;
+    }
+    /*
+
+    
+    .tab-ph {
+        font-size: smaller;
+    }
+
+    .tt-title {
+        font-size: smaller;
+    }
+    */
+
+    .tt-sec {
+        width: 100%;
+    }
+
+    
+    .del-ban-wrap {
+        margin: 0;
+    }
+
+
+
+}
